@@ -1,14 +1,11 @@
 /*************************************************************************
-	> File Name: add.c
+	> File Name: a.c
 	> Author: lvchao
 	> Mail:lvchao0428@163.com 
-	> Created Time: Sat 21 Jun 2014 04:42:14 PM EDT
+	> Created Time: Sat 21 Jun 2014 08:23:33 PM EDT
  ************************************************************************/
 
 #include<stdio.h>
-int main(int argc, char **argv)
-{
-		
+int main()
+{}
 
-	return 0;
-}

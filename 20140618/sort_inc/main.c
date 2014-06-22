@@ -12,8 +12,8 @@
 
 int main()
 {
-	srand(time(NULL));
-	int *a = (int *)malloc(sizeof(int));
+	srand(time(NULL))
+	int *a = (int *)mallocsizeof(int));
 	int i;
 	for(i=0; i<10; ++i)
 		a[i] = rand()%100;

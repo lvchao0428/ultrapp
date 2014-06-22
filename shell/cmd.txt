@@ -1,0 +1,1000 @@
+  127  cd /i
+  128  cd ./include/
+  129  ls
+  130  vim Linklist.h 
+  131  cd ..
+  132  make
+  133  cd src/
+  134  ls
+  135  vim main.c 
+  136  cd..
+  137  cd ..
+  138  gcc -o ./bin/main.exe ./src/*.c -I ./include/
+  139  cd src/
+  140  vim main.c 
+  141  cd ..
+  142  make
+  143  cd src
+  144  vim main.c 
+  145  cd ..
+  146  make
+  147  cd src/
+  148  vim main.c 
+  149  cd ..m
+  150  cd .. 
+  151  make
+  152  ls
+  153  ./bin/main.exe 
+  154  clear
+  155  ls
+  156  cd src/
+  157  vim main.c 
+  158  cd ..
+  159  make
+  160  ./bin/main.exe 
+  161  clear
+  162  cd ..
+  163  mkdir mergeLink
+  164  cd mergeLink/
+  165  mkdir include
+  166  mkdir src
+  167  mkdir bin
+  168  mkdir lib
+  169  ls
+  170  clear
+  171  ls
+  172  cd src
+  173  vim Linklist.c
+  174  vim main.c
+  175  cd ..
+  176  ls
+  177  vim Makefile
+  178  ls
+  179  cd include/
+  180  ls
+  181  vim Linklist.h
+  182  cd ..
+  183  cd src/
+  184  ls
+  185  vim main.c 
+  186  cd ..
+  187  vim Makefile 
+  188  mske
+  189  mae
+  190  make
+  191  vim Makefile 
+  192  make
+  193  cd ..
+  194  ls
+  195  cd make_fileSample/
+  196  cd
+  197  ls
+  198  cd ..
+  199  ls
+  200  cd home/
+  201  ls
+  202  clear
+  203  cd ultra/
+  204  ls
+  205  cd project/
+  206  ls
+  207  cd 20140619
+  208  ls
+  209  cd make_fileSample/
+  210  ls
+  211  vim Makefile 
+  212  cd ..
+  213  ls
+  214  cd mergeLink/
+  215  ls
+  216  vim Makefile 
+  217  make
+  218  cd src/
+  219  ls
+  220  vim main.c 
+  221  cd ..
+  222  cd include/
+  223  ls
+  224  vim Linklist.h 
+  225  cd ..
+  226  clear
+  227  make
+  228  cd src
+  229  vim Linklist.c 
+  230  cd ..
+  231  make
+  232  ls
+  233  cd bin/
+  234  ls
+  235  ./main.exe
+  236  clear
+  237  ./main.exe
+  238  clear
+  239  cd ..
+  240  ls
+  241  mkdir unique_elem_output
+  242  cd unique_elem_output/
+  243  mkdir lib
+  244  mkdir include 
+  245  mkdir src
+  246  mkdir bin
+  247  cd src/
+  248  vim unique.c
+  249  vim main.c
+  250  cd ..
+  251  cd include/
+  252  ls
+  253  vim unique.h
+  254  cd ..
+  255  vim Makefile
+  256  ls
+  257  make
+  258  ./bin/main.exe 
+  259  clear
+  260  ulimit
+  261  gdb ulimit -a
+  262  gdb ulimit
+  263  gdb ulimit -a
+  264  ulimit -c 
+  265  ulimit
+  266  ulimit --help
+  267  ulimit 
+  268  ulimit -c unlimited
+  269  ulimit -c
+  270  ulimit unlimited
+  271  ls
+  272  ulimit
+  273  cd ..
+  274  clear
+  275  ls
+  276  cd float_to_str/
+  277  ls
+  278  cd src/
+  279  ls
+  280  vim main
+  281  vim main.c
+  282  cd ..
+  283  ls
+  284  cd include/
+  285  ls
+  286  cd ..
+  287  cd src/
+  288  ls
+  289  rm main
+  290  ls
+  291  vim float_to_str.c
+  292  ls
+  293  vim main.c 
+  294  cd ..
+  295  cd ./include/
+  296  ls
+  297  vim float_to_str.h
+  298  cd ..
+  299  vim Makefile
+  300  make
+  301  cd src/
+  302  ls
+  303  vim main.c 
+  304  vim float_to_str.c 
+  305  cd ..
+  306  make
+  307  vim Makefile 
+  308  make
+  309  ./bin/main.exe 
+  310  ls
+  311  cd src/
+  312  ls
+  313  vim float_to_str.c 
+  314  cd ..
+  315  make
+  316  ./bin/main.exe 
+  317  ls
+  318  cd src/
+  319  ls
+  320  vim float_to_str.c 
+  321  cd ..
+  322  make
+  323  ./bin/main.exe 
+  324  cd src/
+  325  vim float_to_str.c 
+  326  cd .
+  327  cd ..
+  328  make
+  329  ./bin/main.exe 
+  330  cd src/
+  331  vim float_to_str.c 
+  332  cd ..
+  333  make
+  334  ./bin/main.exe 
+  335  cd ./src/
+  336  vim float_to_str.c 
+  337  cd ..
+  338  make
+  339  ./bin/main.exe 
+  340  cd src/
+  341  vim main.c 
+  342  vim float_to_str.c 
+  343  cd ..
+  344  make
+  345  ./bin/main.exe 
+  346  cd src/
+  347  vim float_to_str.c 
+  348  cd ..
+  349  make
+  350  cd src/
+  351  ls
+  352  vim float_to_str.c 
+  353  cd ..
+  354  make
+  355  ./bin/main.exe 
+  356  cd src/
+  357  vim float_to_str.c 
+  358  cd ..
+  359  make
+  360  ./bin/main.exe 
+  361  cd src/
+  362  vim float_to_str.c 
+  363  vim main.c 
+  364  cd ..
+  365  make
+  366  cd src/
+  367  vim float_to_str.c 
+  368  cd ..
+  369  make
+  370  cd src/
+  371  vim float_to_str.c 
+  372  vim main.c 
+  373  cd ..
+  374  ls
+  375  cd src/
+  376  lv
+  377  ls
+  378  vim float_to_str.c 
+  379  cd ..
+  380  make
+  381  ./bin/main.exe 
+  382  cd src/
+  383  vim float_to_str.c 
+  384  cd ..
+  385  make
+  386  ./bin/main.exe 
+  387  cd ..
+  388  ls
+  389  cd ..
+  390  ls
+  391  mkdir fundamental_100
+  392  ls
+  393  cd fundamental_100/
+  394  ls
+  395  clear
+  396  mkdir 1
+  397  ls
+  398  cd 1
+  399  ls
+  400  mkdir bin
+  401  mkdir lib
+  402  mkdir src
+  403  mkdir include
+  404  cler
+  405  clear
+  406  ls
+  407  cd ..
+  408  ls
+  409  cd 2014061
+  410  cd 20140619
+  411  ls
+  412  mkdir basic_sort
+  413  ls
+  414  cd basic_sort/
+  415  ls
+  416  clear
+  417  mkdir include
+  418  mkdir lib
+  419  mkdir src
+  420  mkdir bin
+  421  ls
+  422  cd src/
+  423  vim sort.c
+  424  vim main.c
+  425  cd ..
+  426  cd include/
+  427  vim sort.h
+  428  cd ..
+  429  vim Makefile
+  430  cd src/
+  431  ls
+  432  vim main.c 
+  433  cd sort.c 
+  434  vim sr
+  435  vim sort.c 
+  436  cd ..
+  437  make
+  438  cd include/
+  439  ls
+  440  vim sort.h 
+  441  cd ..
+  442  make
+  443  vim Makefile 
+  444  make
+  445  ./bin/main.exe 
+  446  cd src/
+  447  vim main.c 
+  448  cd ..
+  449  make
+  450  ./bin/main.exe 
+  451  make
+  452  ./bin/main.exe 
+  453  cd src/
+  454  ls
+  455  vim sort.c 
+  456  vim main.c 
+  457  cd ..
+  458  make
+  459  ls
+  460  vim core.9508
+  461  cat core.9508
+  462  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYq
+  463  clear
+  464  ls
+  465  make
+  466  ./bin/main.exe 
+  467  cd ..
+  468  reboot
+  469  vim main.c 
+  470  vim sort.c 
+  471  cd ..
+  472  make
+  473  ./bin/main.exe 
+  474  clear
+  475  ls
+  476  cd src/
+  477  ls
+  478  vim sort.c 
+  479  vim main.c 
+  480  cd ..
+  481  make
+  482  ./bin/main.exe 
+  483  cd src
+  484  ls
+  485  vim main.c 
+  486  vim sort.c 
+  487  cd ..
+  488  make
+  489  ./bin/main.exe 
+  490  cd src/
+  491  vim sort.c 
+  492  cd ..
+  493  make
+  494  ./bin/main.exe 
+  495  cd src/
+  496  cd ..
+  497  vim my_rmdir.c
+  498  vim my_rmdir.c 
+  499  gcc -o my_rmdir my_rmdir.c 
+  500  ls
+  501  ./my_rmdir my_folder
+  502  ls
+  503  cd ..
+  504  mkdir my_opendir
+  505  ls
+  506  cd my_opendir/
+  507  ls
+  508  vim my_opendir.c
+  509  vi my.c
+  510  vi my_opendir.c 
+  511  clear
+  512  man opendir
+  513  man DIR
+  514  man opendir
+  515  vim .
+  516  cd
+  517  ls
+  518  cd /
+  519  ls
+  520  cd sys
+  521  ls
+  522  ls -l
+  523  cd ..
+  524  ls
+  525  ls -l
+  526  find / -name stat.h
+  527  ls
+  528  cd -
+  529  ls
+  530  cd home/
+  531  ls
+  532  cd ultra/
+  533  ls
+  534  cd project/
+  535  ls
+  536  cd 20140620
+  537  ls
+  538  clear
+  539  ls
+  540  mkdir my_ls
+  541  vim my_ls.c
+  542  gcc -o my_ls my_ls.c
+  543  ls
+  544  vim my_ls.c
+  545  gcc -o my_ls my_ls.c
+  546  ls
+  547  mv my_ls.c my_s
+  548  ls
+  549  cd my_ls/
+  550  ls
+  551  cd ..
+  552  vim my_s
+  553  mv my_s my_ls.c
+  554  ls
+  555  mv my_ls.c ./my_ls
+  556  ls
+  557  cd my_ls/
+  558  ls
+  559  vim my_ls.c 
+  560  gcc -o my_ls my_ls.c 
+  561  vim my_ls.c
+  562  gcc -o my_ls my_ls.c
+  563  ls
+  564  ./my_ls ./
+  565  vim my_ls.c
+  566  gcc -o my_ls my_ls.c
+  567  vim my_ls.c
+  568  gcc -o my_ls my_ls.c
+  569  vim my_ls.c
+  570  ./my_ls 
+  571  vim my_ls.c
+  572  gcc -o my_ls ./my_ls.c
+  573  ./my_ls 
+  574  cat > my_ll.c < my_ls.c
+  575  ls
+  576  vim my_ll.c
+  577  vim Makefile
+  578  ls
+  579  clear
+  580  ls
+  581  vim Makefile 
+  582  ls
+  583  cd ..
+  584  ls
+  585  cd ..
+  586  ls
+  587  cd 20140619
+  588  ls
+  589  cd div_Link/
+  590  ls
+  591  vim Makefile 
+  592  cd ..
+  593  ls
+  594  cd ..
+  595  ls
+  596  cd 20140620
+  597  ls
+  598  cd my_ls
+  599  ls
+  600  vim Makefile 
+  601  make
+  602  ls
+  603  vim my_ll.c
+  604  make
+  605  clear
+  606  vim my_ll.c
+  607  make
+  608  vim my_ll.c
+  609  make
+  610  vim my_ll.c
+  611  make
+  612  vim my_ll.c
+  613  make
+  614  ls
+  615  ./my_ll.exe
+  616  clear
+  617  ls
+  618  vim my_ll.c
+  619  ./my_ll.exe
+  620  vim my_ll.c
+  621  make
+  622  vim my_ll.c
+  623  make
+  624  ls
+  625  ./my_l.exe
+  626  ./my_ll.exe
+  627  vim my_ll.c
+  628  ./my_ll.exe ./
+  629  ./my_ll.exe ../
+  630  ./my_ll.exe .
+  631  ./my_ll.exe ./
+  632  clear
+  633  ./my_ll.exe ..
+  634  ./my_ll.exe ./my_ls
+  635  ./my_ll.exe ../my_ls
+  636  ls
+  637  ./my_ll.exe ../../
+  638  vim my_ll.c
+  639  make
+  640  ls
+  641  ./my_ll.exe ../../
+  642  ls -l
+  643  ls
+  644  ./my_ll.exe /
+  645  ./my_ll.exe ./
+  646  ./my_ll.exe ../
+  647  clear
+  648  ./my_ll.exe ../..
+  649  ls
+  650  vim my_ll.c
+  651  make
+  652  ls
+  653  ./my_l.exe
+  654  ./my_ll.exe ../
+  655  ./my_ll.exe 
+  656  ./my_ll.exe /
+  657  ./my_ll.exe 
+  658  ./my_ll.exe ../
+  659  clear
+  660  ls
+  661  ./my_ls
+  662  vim my_ll.c
+  663  make
+  664  ls
+  665  ./my_ll.exe 
+  666  ./my_ll.exe ../
+  667  vim my_ll.c
+  668  make
+  669  ./my_ll.exe 
+  670  ./my_ll.exe ../
+  671  make
+  672  vim my_ll.c
+  673  make
+  674  vim my_ll.c
+  675  make
+  676  ./my_ll.exe
+  677  clear
+  678  ls
+  679  vim my_ll.c
+  680  make
+  681  ./my_ll.exe
+  682  ./my_ll.exe ../
+  683  vim my_ll.c
+  684  make
+  685  ./my_ll.exe ../
+  686  ./my_ll.exe 
+  687  vim my_ll.c
+  688  make
+  689  clear
+  690  make
+  691  vim my_ll.c
+  692  make
+  693  clear
+  694  make
+  695  vim my_ll.c
+  696  make
+  697  clear
+  698  make
+  699  vim my_ll.c
+  700  make
+  701  vim my_ll.c
+  702  make
+  703  ls
+  704  ./my_ll.exe
+  705  clear
+  706  ls
+  707  vim my_ll.c
+  708  make
+  709  clear
+  710  ls
+  711  vim my_ll.c
+  712  make
+  713  vim my_ll.c
+  714  make
+  715  vim my_ll.c
+  716  make
+  717  vim my_ll.c
+  718  make
+  719  ./my_ll
+  720  ls
+  721  ./my_ll.exe
+  722  vim my_ll.c
+  723  make
+  724  ./my_ll.exe
+  725  vim my_ll.c
+  726  make
+  727  ls
+  728  ./my_ll.exe
+  729  ./my_ll.exe /
+  730  ./my_ll.exe ../
+  731  make
+  732  ./my_ll.exe ../
+  733  make
+  734  ls
+  735  vim my_ll.c
+  736  make
+  737  vim my_ll.c
+  738  make
+  739  ./my_ll.exe
+  740  vim ./my_ll.c
+  741  make
+  742  vim my_ll.c
+  743  make
+  744  ls
+  745  ./my_ll.exe
+  746  clear
+  747  vim my_ll.c
+  748  make
+  749  ./my_ll.exe
+  750  vim my_ll.c
+  751  make
+  752  ./my_ll.exe
+  753  date
+  754  ./my_ll.exe
+  755  vim my_ll.c
+  756  make
+  757  ./my_ll.exe
+  758  vim my_ll.c
+  759  yum install git
+  760  cd /
+  761  git
+  762  clear
+  763  ls 
+  764  ls
+  765  cd home/
+  766  ls
+  767  cd ultra/
+  768  ls
+  769  cd project/
+  770  ls
+  771  cd 20140621
+  772  ls
+  773  git chechout
+  774  git checkout
+  775  git log
+  776  git checkout 219827dbe73c73c7298af2cb60f8632fb9489ccc
+  777  vim main.c 
+  778  git checkout 219827dbe73c73c7298af2cb60f8632fb9489ccc
+  779  vim main.c 
+  780  git branch
+  781  ls
+  782  git add main.c 
+  783  git status
+  784  cd ~/ .ssh
+  785  ls
+  786  ls -al
+  787  ssh-keygen -t rsa -C "lvchao0428@163.com"
+  788  eval `ssh-agent -s`
+  789  ssh-add ~/.ssh/id_rsa
+  790  clip < ~/.ssh/id_rsa.pub
+  791  ssh -T git@github.com
+  792  ssh -vT git@github.com
+  793  cd ~/.ssh
+  794  ls -al
+  795  ssh-keygen -t rsa -C "lvchao0428@163.com"
+  796  eval `ssh-agent -s`
+  797  ssh-add ~/.ssh/id_rsa
+  798  ls
+  799  ssh-keygen -t rsa -C "lvchao0428@163.com"
+  800  ls
+  801  rm lvchao*
+  802  ls
+  803  eval `ssh-agent -s`
+  804  ls
+  805  ssh-add ~/.ssh/id_rsa
+  806  clip < ~/.ssh/id_rsa.pub
+  807  ssh-add ~/.ssh/id_rsa
+  808  clip < ~/.ssh/id_rsa.pub
+  809  ~/.ssh/id_rsa.pub
+  810  vim ~/.ssh/id_rsa.pub
+  811   ~/.ssh/id_rsa.pub
+  812  eval `ssh-agent -s`
+  813  ssh-add ~/.ssh/id_rsa
+  814  vim ~/.ssh/id_rsa.pub
+  815  cd ~/.ssh
+  816  ls -al
+  817  ls
+  818  ssh-keygen -t rsa -C "lvchao0428@163.com"
+  819  eval `ssh-agent -s`
+  820  ssh-add ~/.ssh/id_rsa
+  821  vim ~/.ssh/id_rsa.pub
+  822  cat ~/.ssh/id_rsa.pub
+  823  ssh -T git@github.com
+  824  uname -r
+  825  git --version
+  826  git config --global user.name "lvchao0428"
+  827  git config --global user.email "lvchao0428@163.com"
+  828  git init
+  829  ls -a
+  830  cd .git
+  831  ls
+  832  pwd
+  833  git status
+  834  ls
+  835  cd ..
+  836  ls
+  837  cd ..
+  838  ls
+  839  cd home/
+  840  ls
+  841  cd ultra/
+  842  ls
+  843  cd project/
+  844  ls
+  845  clear
+  846  ls
+  847  mkdir 20140621
+  848  ls
+  849  cd 20140621
+  850  vim main.c
+  851  git init
+  852  git add main.c
+  853  vim main.c 
+  854  git status
+  855  vimvvvvvvvvvvvfsfdsdfsdfsdfsdfsfsdfadfadfadffdsafdasdfasdasdasdasdasdqqqweqweqweqweqweqweqwasdasdqweqweq
+  856  vim   git status
+  857  git status
+  858  git commit -m "main.c"
+  859  git log
+  860  date
+  861  date -s 10.00.00
+  862  date
+  863  date -s 10:00:00
+  864  date
+  865  date 140621
+  866  date -s 140621
+  867  date -s CST
+  868  date
+  869  git status
+  870  git reset file
+  871  git status
+  872  vim main.c 
+  873  git status
+  874  git reset main.c 
+  875  vim main.c 
+  876  git status
+  877  git rm -cached file
+  878  git reset -hard HEAD
+  879  vim main.c 
+  880  git reset --hard HEAD
+  881  vim main.c 
+  882  git checkout
+  883  git checkout lkjsdlfkjsldkfj
+  884  git checkout master
+  885  vim main.c 
+  886  git reset --hard
+  887  vim main.c 
+  888  git remote -v
+  889  ls
+  890  cd 
+  891  cd /
+  892  ls
+  893  cd home/
+  894  ls
+  895  cd cd ultra/
+  896  ls
+  897  cd ultra/
+  898  ls
+  899  clear
+  900  ls
+  901  cd project/
+  902  ls
+  903  cd 20140621
+  904  ls
+  905  clear
+  906  ls
+  907  git status
+  908  ls
+  909  vi main.c 
+  910  git log
+  911  git diff
+  912  git status
+  913  git commit -a
+  914  git add
+  915  git add .
+  916  git status
+  917  ls
+  918  git log
+  919  date
+  920  date -s 10:28:00
+  921  clear
+  922  date
+  923  clear
+  924  git log
+  925  ls
+  926  ls -l
+  927  git status
+  928  vim main.c 
+  929  git status
+  930  git checkout
+  931  git rm --cached file
+  932  git rm --cached main.c
+  933  ls
+  934  vim main.c 
+  935  git status
+  936  git log
+  937  clear
+  938  cd .
+  939  cd ..
+  940  ssh -T git@github.com
+  941  cd ..
+  942  ls
+  943  cd home/
+  944  ls
+  945  cd ultra/
+  946  ls
+  947  cd project/
+  948  ls
+  949  cd 20140621
+  950  ls
+  951  git push main.c 
+  952  git remote -v
+  953  git push main.c
+  954  git pull
+  955  ls
+  956  git remove -v
+  957  git remote -v
+  958  ls
+  959  git remote -v
+  960  cd ~/.ssh
+  961  ssh-keygen -t rsa -C "lvchao0428@163.com"
+  962  eval `ssh-agent -s`
+  963  ssh-add ~/.ssh/id_rsa
+  964  clip < ~/.ssh/id_rsa.pub
+  965  vim ~/.ssh/id_rsa.pub
+  966  cat ~/.ssh/id_rsa.pub
+  967  ssh -T git@github.com
+  968  ls
+  969  vim id_rsa.pub
+  970  ls
+  971  cd ..
+  972  ls
+  973  ls -a
+  974  cd /
+  975  ls
+  976  cd project/
+  977  ls
+  978  mkdir 
+  979  mkdir code
+  980  vim main.c
+  981  ls
+  982  cd ..
+  983  git branch
+  984  cd ..
+  985  git branch
+  986  ls
+  987  cd project/
+  988  git init
+  989  ls
+  990  git status
+  991  git add test.c 
+  992  git add main.c
+  993  ls
+  994  git commit -m "第一次提交"
+  995  git log
+  996  git checkout
+  997  git checkout  fe4121e36df48afd91d74b9d6f6c5c8a48abf8b4
+  998  zsh
+  999  zish
+ 1000  exit
+ 1001  cd 
+ 1002  cd -
+ 1003  pwd
+ 1004  ls
+ 1005  clear
+ 1006  ls
+ 1007  clear
+ 1008  vim a.
+ 1009  vim a.c
+ 1010  ls
+ 1011  cd ..
+ 1012  ls
+ 1013  mkdir tt
+ 1014  ls
+ 1015  cp -r shell tt/
+ 1016  ls
+ 1017  cd tt
+ 1018  ls
+ 1019  cd shell/
+ 1020  ls
+ 1021  clear
+ 1022  ls
+ 1023  cd ..
+ 1024  ls
+ 1025  clear
+ 1026  cs
+ 1027  ls
+ 1028  vim c.txt
+ 1029  ls
+ 1030  mv s.txt shell/
+ 1031  mv c.txt shell/
+ 1032  ls
+ 1033  cd shell/
+ 1034  ls
+ 1035  mv a.txt ../
+ 1036  cd ..
+ 1037  ls
+ 1038  mv a.txt shell/e.txt
+ 1039  ls
+ 1040  cd shell/
+ 1041  ls
+ 1042  cat e.txt
+ 1043  clear
+ 1044  ls
+ 1045  clear
+ 1046  ls
+ 1047  ls -l
+ 1048  ls
+ 1049  vim a.c
+ 1050  ls
+ 1051  ls -la
+ 1052  ls -lR 
+ 1053  ls
+ 1054  vim a.c
+ 1055  ls -ltr
+ 1056  ls -lr
+ 1057  man ls
+ 1058  ls
+ 1059  cd ..
+ 1060  ls
+ 1061  cd ..
+ 1062  rm tt
+ 1063  ls
+ 1064  cd t
+ 1065  cd tt/
+ 1066  ls
+ 1067  rm *
+ 1068  cd shell/
+ 1069  ls
+ 1070  rm *
+ 1071  cd ..
+ 1072  ls
+ 1073  cd tt
+ 1074  cd shell/
+ 1075  ls
+ 1076  rmdir *
+ 1077  ls
+ 1078  clear
+ 1079  cd ..
+ 1080  ls
+ 1081  rmdir shell
+ 1082  ls
+ 1083  cd ..
+ 1084  touch xx.txt
+ 1085  ls
+ 1086  ls -l
+ 1087  ls -lr
+ 1088  chmod 777 xx.txt
+ 1089  ls
+ 1090  ls -ltr
+ 1091  clear
+ 1092  ls
+ 1093  ls -lr
+ 1094  vim xx.txt
+ 1095  cat xx.txt
+ 1096  vim yy.txt
+ 1097  cat xx.txt yy.txt > zz.txt
+ 1098  ls
+ 1099  cat zz.txt 
+ 1100  clar
+ 1101  head -1 zz.txt
+ 1102  tailf zz.txt
+ 1103  tar czvf xx.tar.gz xx.txt
+ 1104  ls
+ 1105  du -h xx.tar.gz 
+ 1106  tar cvf shell.tar.gz shell
+ 1107  ls
+ 1108  du -h shell.tar.gz 
+ 1109  tar czvf shell.tar.gz shell
+ 1110  ls
+ 1111  du -h shell.tar.gz 
+ 1112  ls -ltr
+ 1113  tar xvf shell.tar 
+ 1114  tar xvf shell.tar.gz
+ 1115  ls
+ 1116  rm -rf shell
+ 1117  ls
+ 1118  tar xvf shell.tar.gz 
+ 1119  ls
+ 1120  cd shell
+ 1121  ls
+ 1122  cat a.txt 
+ 1123  clear
+ 1124  ls
+ 1125  history
+ 1126  history > cmd.txt
