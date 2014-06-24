@@ -15,8 +15,8 @@ pBiTree createBiTree()
 {
 	char c;
 	pBiTree p;
-	fflush(stdin);
 	scanf("%c", &c);
+	getchar();
 	if(c == '#')
 		return NULL;
 	else

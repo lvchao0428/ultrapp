@@ -1,0 +1,2 @@
+my_read: my_read.c
+	gcc -o my_read ./my_read.c
