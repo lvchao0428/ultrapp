@@ -13,6 +13,7 @@
 #include <string.h>
 #define MAX_TXT_LINE (1<<16)
 //#define MAX_CHA 1024
+#define MAX_WORD_COUNT (1<<20)
 
 
 typedef struct tagw
@@ -20,6 +21,7 @@ typedef struct tagw
 	char word[32];
 	int count;
 }TXT_WORD, *pTXT_WORD;
+
 typedef struct tag
 {
 	int word_e_num;
@@ -42,4 +44,8 @@ void kmp_search(char * src, char *par);
 int is_character(char ch);
 
 void depunct(char *fp, char *ss);
+void despace(char * buf);
+void fill_the_word(pTXT pt, char * buf);
+void insert_word(pTXT pt, char *word);
+
 #endif

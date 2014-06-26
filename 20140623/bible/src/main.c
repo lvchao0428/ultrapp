@@ -16,21 +16,31 @@
 
 int main(int argc, char **argv)
 {
+//	printf("fuck");
 	int i=0;
 	pTXT pt;// = (pTXT)malloc(sizeof(TXT));
 
-//	pt = init_txt("b.txt");
-	pt = init_txt("The_Holy_Bible.txt");
+//	printf("begin,init\n");
+	pt = init_txt("a.txt");
+//	pt = init_txt("The_Holy_Bible.txt");
 //	printf("begin output.\n");
 //	printf("pt->line_num:%d\n", pt->line_num);
-//	printf("pt->char_num:%d\n", pt->char_num);
-	
+		
 	while(i< pt->line_num)
 	{
 	//	printf("now :");
 		puts(pt->des_txt[i]);
+	//	printf("%s jj\n", pt->des_txt[i]);
 	//	puts(pt->src_txt[i]);
 		i++;
+	}
+	printf("output word:\n ");
+	int j=0;
+	while(j<pt->word_e_num)
+	{
+	//	printf("%s: %d\n", pt->des_word[j].word,
+//				pt->des_word[j].count);
+		j++;
 	}
 		
 	return 0;
