@@ -4,7 +4,6 @@
 	> Mail:lvchao0428@163.com 
 	> Created Time: Tue 24 Jun 2014 03:45:02 AM EDT
  ************************************************************************/
-
 #include<stdio.h>
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -12,7 +11,8 @@
 #include <sys/select.h>
 #include <sys/time.h>
 #include <unistd.h>
-
+#include <malloc.h>
+#include <string.h>
 
 int main()
 {
@@ -26,14 +26,12 @@ int main()
 	FD_SET(fd1, &fd_read);
 	FD_SET(fd2, &fd_read);
 	struct timeval tm;
-
 	while(1)
 	{
 		tm.tv_sec = 3;
 		tm.tv_usec = 0;
 		fd_ready = fd_read;
 		n_ready = select(1024, &fd_read, NULL, NULL, &tm);
-
 		printf("ready cnt:%d \n", n_ready);
 		if(FD_ISSET(0, &fd_read))
 		{
@@ -46,16 +44,12 @@ int main()
 			memset(buf, 0, 1024);
 			read(fd1, buf, 1024);
 			printf("1.txt active!: %s\n", buf);
-			
 		}
-
 		if(FD_ISSET(0, &fd_read))
 		{
 			memset(buf, 0, 1024);
 			read(fd2, buf, 1024);
 			printf("2.txt active!: %s\n", buf);
-		
 		}
-	
-
 	}
+}

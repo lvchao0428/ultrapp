@@ -50,10 +50,10 @@ int main(int argc, char *argv[])
 				arglist[i] = (char*)calloc(100, sizeof(char));
 				i++;
 			}
-			printf("begin process:\n");
+	//		printf("begin process:\n");
 			process(line, arglist);
 			outputarg(arglist)	;
-			printf("process over.");
+	//		printf("process over.");
 			int iret;	
 			if(fork() > 0)
 			{			
