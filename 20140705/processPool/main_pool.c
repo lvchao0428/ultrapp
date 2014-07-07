@@ -15,7 +15,7 @@ int main(int argc,char *argv[])
 		exit(-1);
 	}
 
-	int chld_cnt = atoi(argv[1]);
+	int chld_cnt = atoi(argv[3]);
 	SA server_addr ;
 	int fd_server, max_fd, index;
 	fd_set read_set, ready_set ;
@@ -61,9 +61,10 @@ int main(int argc,char *argv[])
 			SA from_addr ;
 			int addrlen = sizeof(SA);
 			bzero(&from_addr, sizeof(SA));
+			printf("begin recv....\n");
 			recvfrom(fd_server, buf,1024, 0,
 					(struct sockaddr*)&from_addr, &addrlen) ;
-
+			puts(buf);
 			for(index = 0; index < chld_cnt; index ++ )
 			{
 				if(chlds[index].s_flag == S_IDLE)

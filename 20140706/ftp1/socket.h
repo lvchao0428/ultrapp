@@ -13,6 +13,7 @@
 #include <fcntl.h>
 #include <signal.h>
 int listenfd_init(char* ip, char* port);
-void handle_request(int fd_client);
+void dl_file(int fd_client);
+void ul_file(int fd_client);
 #endif
 

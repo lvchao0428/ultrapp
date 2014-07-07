@@ -41,12 +41,12 @@ int main(int argc ,char *argv[])
 	server_addr.sin_addr.s_addr = inet_addr(argv[1]);
 	server_addr.sin_port = htons(atoi(argv[2]));
 
-	if(-1 == bind(fd_server, (struct sockaddr*)&server_addr,
-				sizeof(server_addr)))
-	{
-		perror("bind");
-		exit(-1);
-	}
+//	if(-1 == bind(fd_server, (struct sockaddr*)&server_addr,
+//				sizeof(server_addr)))
+///	{
+//		perror("bind");
+//		exit(-1);
+//	}
 	
 	while(fflush(stdin), fgets(buf, 1024, stdin) != NULL)
 	{

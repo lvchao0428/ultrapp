@@ -66,7 +66,7 @@ void child_main()
 		client_addr.sin_family = AF_INET;
 		
 		scanf("%d %d %s", &(client_addr.sin_port),
-				&(client_addr.sin_addr.s_addr)), buf;
+				&(client_addr.sin_addr.s_addr), buf);
 //		fgets(buf, "%s", stdin);
 		fd_socket = socket(AF_INET, SOCK_DGRAM, 0);
 
