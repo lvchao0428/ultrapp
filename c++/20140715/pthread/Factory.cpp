@@ -11,7 +11,7 @@ Factory::Factory(size_t bufferSize,
                  size_t producerNum,
                  size_t consumerNum)
     :bufferSize_(bufferSize),
-    buffer_(bufferSize),
+    buffer_(bufferSize_),
     producerNum_(producerNum),
     consumerNum_(consumerNum),
     produceThreads_(producerNum_, ProduceThread(buffer_)),

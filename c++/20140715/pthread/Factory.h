@@ -13,9 +13,9 @@ class Factory
                 size_t consumerNum_);
 
         void start();
-        virtual ~Factory();
+        virtual ~Factory(){}
     private:
-        size_t buffersize_;
+        size_t bufferSize_;
         Buffer buffer_;
         size_t producerNum_;
         size_t consumerNum_;
