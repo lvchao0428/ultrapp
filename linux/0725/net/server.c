@@ -14,6 +14,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include "readfile.h"
 
 #define ERR_EXIT(m) \
     do \
@@ -24,27 +25,48 @@
 
 #define MAXLINE 1023    
 
+
+
+
 static void do_service(int peerfd)
 {
-    char recvbuf[MAXLINE + 1];
+//    char recvbuf[MAXLINE + 1];
 
-    memset(recvbuf, 0x00, sizeof(recvbuf));
+//    memset(recvbuf, 0x00, sizeof(recvbuf));
+    
+    struct pack recvpac;
+    memset(&recvpac, 0x00, sizeof recvpac);
 
     while(1)
     {
-        int nread = read(peerfd, recvbuf, MAXLINE);
+        int nread = read(peerfd, &recvpac.len, MAXLINE);
         if(nread<0)
-            ERR_EXIT("read");
-        if(nread == 0)
+            ERR_EXIT("nread");
+
+        if(nread < 4)
         {
             fprintf(stdout, "peerclose\n");
             break;
         }
-        fprintf(stdout, "recv:%s", recvbuf);
-        int nwrite = write(peerfd, recvbuf, nread);
-        if(nwrite < 0)
-            ERR_EXIT("write");
-        memset(recvbuf, 0x00, sizeof(recvbuf));
+        int nlen = ntohl(recvpac.len);
+
+        fprintf(stdout, "len:%d", nlen);
+
+        nread = readn(peerfd, recvpac.data, nlen);
+        if(nread < 0)
+            ERR_EXIT("wread");
+
+        if(nread < nlen)
+        {
+            fprintf(stdout, "peer close\n");
+            break;
+        }
+        
+        fprintf(stdout, "recv:%s", recvpac.data);
+
+        writen(peerfd, &recvpac, 4 + nlen);
+
+        memset(&recvpac, 0x00, sizeof recvpac);
     }
 }
 

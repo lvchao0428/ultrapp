@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "readfile.h"
 
 
 #define ERR_EXIT(m) \
@@ -24,33 +25,46 @@
         exit(EXIT_FAILURE);\
     }while(0)
 
-#define MAXLINE 1023
 
 static void do_service(int fd)
 {
-    char recvbuf[MAXLINE + 1];
-    char sendbuf[MAXLINE + 1];
-    memset(recvbuf, 0x00, sizeof recvbuf);
-    memset(sendbuf, 0x00, sizeof sendbuf);
+    struct pack recvbuf;
+    struct pack sendbuf;
 
-    while(fgets(sendbuf, MAXLINE, stdin) != NULL)
+    memset(&recvbuf, 0x00, sizeof recvbuf);
+    memset(&sendbuf, 0x00, sizeof sendbuf);
+
+    while(fgets(sendbuf.data, MAXLINE, stdin) != NULL)
     {
-        int nwrite = write(fd, sendbuf, strlen(sendbuf));
-        if(nwrite < 0)
-        {
-            ERR_EXIT("WRITE");
-        }
-        int nread = read(fd, recvbuf, MAXLINE);
+        int nlen = strlen(sendbuf.data);
+        sendbuf.len = htonl(nlen);
+        writen(fd, &sendbuf, nlen + sizeof(int));
+
+        int nread = readn(fd, &recvbuf.len, 4);
         if(nread < 0)
-            ERR_EXIT("READ");
+        {
+            ERR_EXIT("nread");
+        }
+        if(nread < 4)
+        {
+            fprintf(stdout, "peer close\n");
+            break;
+        }
+
+        fprintf(stdout, "len:%d\n", nlen);
+        nread = readn(fd, recvbuf.data, nlen);
+
+        if(nread < 0)
+            ERR_EXIT("nread");
+
         if(nread == 0)
         {
             fprintf(stdout, "peer close\n");
             break;
         }
-        fprintf(stdout, "recv:%s\n", recvbuf);
-        memset(recvbuf, 0x00, sizeof recvbuf);
-        memset(sendbuf, 0x00, sizeof sendbuf);
+        fprintf(stdout, "recv:%s\n", recvbuf.data);
+        memset(&recvbuf, 0x00, sizeof recvbuf);
+        memset(&sendbuf, 0x00, sizeof sendbuf);
     }
 
 }

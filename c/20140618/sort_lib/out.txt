@@ -1,0 +1,5 @@
+origin array:13  10  52  73  5  82  61  4  39  0  
+select_sort:0  4  5  10  13  39  52  61  73  82  
+Insert_sort:0  4  5  10  13  39  52  61  73  82  
+Insert_sort:0  4  5  10  13  39  52  61  73  82  
+Insert_sort:0  4  5  10  13  39  52  61  73  82  
