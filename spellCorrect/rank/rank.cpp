@@ -64,6 +64,7 @@ int min_ed1(const string &s1, const string &s2, int m , int n)
 
     return dis;
 }
+
 void Rank::readfile()
 {
     ifstream in;
@@ -73,14 +74,24 @@ void Rank::readfile()
     if(!in)
         throw runtime_error("cannot open the file.");
 
-    string s1, s2;
+    string word;
     int num;
-    while(in >>s1 >> num)
+    string::iterator siter;
+    while(in >> word >> num)
     {
-        wp.first = s1;
-        wp.second = num;
-        vecw_.push_back(wp);
+        siter = word.begin();
+        for(; siter != word.end(); ++siter)
+        {
+            hm_[*siter].insert(make_pair(word, num));
+        }
     }
+
+    
+}
+
+void Rank::map_Union()
+{
+    
 }
 
 void Rank::compute()
@@ -121,7 +132,7 @@ void Rank::compute()
 
                 }
             }
-            if( fabs((double)dis/word.size()) < 0.2)        
+            if( fabs((double)dis/word.size()) < 0.5)        
                 HeapInsert(heapvec_, temp_wp);          
         }
         if(heapvec_.empty())   

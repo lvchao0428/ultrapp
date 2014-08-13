@@ -4,15 +4,14 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "rank.h"
 
 class WordIndex
 {
     public:
-        WordIndex();
-        void fill_Index(std::vector<WORDPAIR> vecw);
+        void fill_Index(std::vector<std::string> vecw);
+        void print();
     private:
-        std::vector<WORDPAIR> vecIndex_[26];
+        std::vector<std::string> vecIndex_[26];
 };
 
 #endif  /*INDEX_H_*/
