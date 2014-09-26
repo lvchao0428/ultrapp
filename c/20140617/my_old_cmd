@@ -1,0 +1,415 @@
+cat aa
+ls
+cd 20140617/
+ls
+cat aa
+vim aa
+cat > aa < 
+cat > aa 
+cd 20140617/
+cat > aa
+clear
+who -h
+who -H
+who -w +
+who -q
+who idle
+idle
+who -a
+clear
+who -a
+w -a
+w -l
+whoani
+whoami
+who am i
+hostname -a
+hostname -d
+hostname -f
+hostname -i
+uname -s
+uname -r
+uname -p
+uname -o
+du -s
+cd .
+cd ..
+du -s
+du -max 
+clear
+du -b
+ls
+cd 20140617/
+cd -b
+du -b
+du -depth
+du -depth=3
+df -h
+df -i
+df -l
+df -t
+free -t
+free -s
+cd ..
+ls
+cd ..
+ls
+du -t
+du -a
+cd ..
+ls
+grep -w 
+tail -20 /etc/passwd -f
+cat aa
+tail -20 ./aa -f
+tail -20 aa -f
+cat aa
+tail aa -f
+cat aa
+tail aa -f
+cat aa
+grep -n aa
+ls -l | grep ^l
+ls
+ls -l | grep a
+ls -l | grep^a
+ls -l | grep^d
+ls -l | grep a$
+ls -l | grep -n '.*'
+wc -c
+wc -c aa
+cat aa
+wc -w aa
+wc -l aa
+ls
+gzip -1 source.tar souece1.tar
+gzip -1 source.tar
+gzip -1 ./source.tar
+ls
+gzip -1 aa
+ls
+ls -l
+rm aa.gz
+rm abc
+rm a.txt
+rm bb
+sl
+ls
+rm c.txt
+ls
+rm e.txt
+vim a.txt
+ls -l
+cp a.txt a1.txt
+ls
+ls -l
+cp a.txt a2.txt
+ls -l
+sort 
+cd ..
+sort 20140617/
+cd 20140617/
+ls
+gzip -1 a.txt
+gzip 09 a.txt
+gzip -9 a1.txt
+ls -l
+dmesg
+less dmesg
+less | dmesg
+file -s
+file -s/dev/hd*;
+file *
+who -b
+who -a
+who -r
+su root
+ls
+ls
+cd 20140617/
+tar cvf source.tar ./*.txt
+ls
+ls -l
+tar cvf source.tar.gz ./*.txt
+ls -l
+tar czvf source.tar.gz ./*.txt
+ls -l
+gzip source.tar.gz
+ls
+gzip -dv source.tar.gz
+ls
+ls -l
+ls -f
+ls -a
+ls -d
+ls -t
+ls -r
+ls -m
+touch * 
+ls -l
+cp -a source ./lvchao
+cp -a a ./lvchao
+ls -l
+cd lvchao
+ls -l
+mv -b a ./ ./lvchao
+mv -b ./ ./lvchao
+mv -b a ./lvchao
+ls -l
+cd ..
+mv -b a ./lvchao
+cd lvchao/
+ls -l
+cd lvchao 
+ls -l
+ls
+ls -l
+rm f lvchao
+rm -f lvchao
+ls
+cd ..
+cd ../lvchao
+mkdir abc
+ls
+ls -l
+cat b.txt
+vim b.txt
+cat b.txt
+clear
+ls
+cat d.txt
+vim d.txt
+cat b.txt d.txt > txt
+ls
+cat d.txt
+cat b.txt
+clear
+ls
+ls -l
+cat aa
+sort aa
+cat aa
+sort aa
+cat aa
+sort -n aa
+cat b.txt
+sort -n b.txt
+sort
+srot -n b.txt
+cat b.txt
+sort -n b.txt
+clear
+vim b.txt
+rm b.txt
+ls
+vim b.txt
+sort -n b.txt
+cat a.tt
+cat a.txt
+vim c.txt
+sort a.txt b.txt c.txt -o ss.txt
+cat ss.txt
+less ss.txt
+paste a.txt b.txt > c.txt
+cat c.txt
+vim a.txt
+vim b.txt
+vim c.txt
+cat a.txt
+cat b.txt
+paste a.txt b.txt > c.txt
+cat a.txt
+cat c.txt
+ls
+ls -l
+cat abc
+cd abc
+ls
+cd ..
+ln -s c.txt ./abc 
+ls
+cd abc
+ls
+ls -l
+cd ..
+ln b.txt ./abc
+ls
+cd abc
+ls
+find .-user "ultra" -exec ls -l {} \;
+head -20 /etc/passwd
+head -20 -f /etc
+head -f /etc
+tail -20 -f 
+tail -20 -f /etc
+tail -f /etc
+tail -f -20 /etc
+tail -f -20 /etc/
+tail -f -20 /etc/passwd
+su root
+ls
+cd 20140617/
+mkdir temp
+ls
+cd temp
+ls
+vim main.c
+cd ..
+mv -f ./main.c ./temp/main.c
+ls
+cd ./temp
+ls
+cat main.c
+vim main.c
+rm -f ./temp
+ls
+cd ..
+rm -rf ./temp
+ls
+cd ..
+cd 20140617/
+ls
+mkdir text
+ls
+vim main.c
+cat -b main.c
+cat -e main.c
+cat -n main.c
+cat -s main.c
+vim main1.c
+cat > main.c < main1.c
+cat main.c
+ls
+rm main.c
+ls
+cat >> main.c < main1.c
+ls
+main.c
+vim main.c
+cat > main.c <<*
+mkdslfj
+sd
+fs
+dfs
+df*
+*
+main.c
+cat main.c
+cat >> main.c <<-d
+sldkjl
+1
+1
+1
+1
+1
+1
+1
+1
+11
+-d
+-d
+-d
+sdfjlkjl
+-
+d
+cat main.c
+echo > a.txt
+ls
+cat a.txt
+touch b.txt
+ls
+ls -l
+ls
+cat > c.txt
+ls
+cat > d.txt
+ls
+cat a.txt
+vim e.txt
+cat e.txt
+vim a.txt
+head -n a.txt
+head -n 10 a.txt
+tail -n 3 a.txt
+ls -l /etc | wc -w
+ls | cat > aa
+ls
+vim aa
+ls -l | cat >> bb
+ls
+cat bb
+ls -l
+ls >> aa
+ls
+cat aa
+ls > a
+cat a
+clear
+ls -l `cat aa`
+ls
+aa
+cat aa
+ls -l `cat aa`
+ls -l
+ls -l$(cat aa)
+vim aa
+ls -l
+ls
+cat a
+cat aa
+ls
+ls -l `cat aa`
+ls -l `cat`
+ls -l `a`
+umask
+cd ..
+ls -l
+cd 20140617/
+umask 000
+cd ..
+ls -l
+cd ..
+cd 2014
+cd ls
+ls
+cd ultra
+ls
+cd 20140617/
+ls -l
+cd ..
+ls -l
+cd 20140617/
+umask 001
+cd .,
+cd ..
+ ls -l
+cd 214
+cd 20140617/
+umask
+umask 000
+umask
+cd ..
+ls -l
+su root
+ls
+cd 20140617/
+ls
+free -t
+alias
+vim hello.c
+ls
+gcc -o hello.c
+gcc -o hello hello.c
+ls
+hello
+hello.h
+cd ./hello
+./hello
+clear
+ls
+clear
+./helo
+./hello
+clear
+history
+history -w my_old_cmd
