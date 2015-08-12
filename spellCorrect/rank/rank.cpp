@@ -113,7 +113,7 @@ void Rank::compute()
         for(; it != vecw_.end(); ++it)
         {
             //optimize 1:
-            d = fabs(word.size() - (it->first).size());
+            d = fabs((word.size() - (it->first).size())/(double)word.size());
             if(d > 0.3)
                 continue;
             
