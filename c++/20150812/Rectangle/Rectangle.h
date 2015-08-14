@@ -17,7 +17,7 @@ class Rectangle: public Shape
     int width;
     int height;
 
-    Point* leftUp;
+    Point* leftUp, * rightDown;
 
 public:
     Rectangle(int widthdth, int height, int x, int y);
