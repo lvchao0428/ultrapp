@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 	printf("fd: %d \n", fd_wr);
-	while(memset(buf,0,1024),read_n = read(0, buf, 1024))
+	while(memset(buf,0,1024),read_n = read(fd_wr, buf, 1024))
 	{	
 		
 		printf("read_n:%d\n", read_n);
